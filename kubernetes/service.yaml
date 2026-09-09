@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: reliable-api
+  namespace: sre-platform
+
+spec:
+  selector:
+    app: reliable-api
+
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+
+  type: ClusterIP
