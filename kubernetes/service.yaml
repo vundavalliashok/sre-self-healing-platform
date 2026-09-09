@@ -4,13 +4,16 @@ kind: Service
 metadata:
   name: reliable-api
   namespace: sre-platform
+  labels:
+    app: reliable-api
 
 spec:
   selector:
     app: reliable-api
 
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 8000
 

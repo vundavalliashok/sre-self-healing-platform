@@ -1,0 +1,22 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+
+metadata:
+  name: reliable-api
+  namespace: sre-platform
+  labels:
+    release: monitoring
+
+spec:
+  selector:
+    matchLabels:
+      app: reliable-api
+
+  namespaceSelector:
+    matchNames:
+      - sre-platform
+
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
