@@ -21,7 +21,6 @@ ACTIVE_REQUESTS = Gauge(
 
 START_TIME = time.time()
 
-
 @app.get("/")
 def root():
     REQUEST_COUNT.inc()
