@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Users/hp/Downloads/sre-self-healing-platform-enhanced/monitoring"
+		},
+		{
+			"path": "../../../Users/hp/Downloads/sre-self-healing-platform-enhanced/observability"
+		},
+		{
+			"path": "../../../Users/hp/Downloads/sre-self-healing-platform-enhanced/remediation"
+		},
+		{
+			"path": "../../../Users/hp/Downloads/sre-self-healing-platform-enhanced/runbooks"
+		},
+		{
+			"path": "../../../Users/hp/Downloads/sre-self-healing-platform-enhanced/kubernetes"
+		}
+	],
+	"settings": {}
+}
